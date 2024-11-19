@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE-ZONE</title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2728/2728262.png">
+    <link rel="stylesheet" href="Vers.1.1.css">
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Cursos de ayuda</a>
+                <ul class="submenu">
+                    <li><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-2">Aprende HTML</a></li>
+                    <li><a href="https://web.dev/learn/css?hl=es">Aprende CSS</a></li>
+                    <li><a href="https://www.tecgurus.net/cursos/php-desde-cero">Aprende PHP</a></li>
+                    <li><a href="https://www.programarya.com/Cursos/Java">Aprende Java</a></li>
+                </ul>
+            </li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="top-left">
+        <img src="code-zone.png" alt="logo CODE-ZONE" width="100">
+    </div>
+    <div class="top-right">
+        <img src="code-zone.png" alt="logo CODE-ZONE" width="100">
+    </div>
+
+    <h1>"Estudio de programación web"</h1>
+    
+    <h3>En esta página podrás desarrollar tus habilidades de programación y aprender los lenguajes más fáciles del mundo</h3>
+
+    <div class="container">
+        <a href="IntroduccionHTML.html" class="cuadrado html">HTML</a>
+        <a href="IntroduccionCSS.html" class="cuadrado css">CSS</a>
+        <div class="cuadrado js disabled">
+            <span class="title">JavaScript</span>
+            <span class="subtitle">Próximamente</span>
+        </div>
+        <div class="cuadrado php disabled">
+            <span class="title">PHP</span>
+            <span class="subtitle">Próximamente</span>
+        </div>
+        <div class="cuadrado java disabled">
+            <span class="title">Java</span>
+            <span class="subtitle">Próximamente</span>
+        </div>
+    </div>
+    
+
+    <script>
+        // Mostrar mensaje al hacer clic en los cuadros deshabilitados
+        document.querySelectorAll('.disabled').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Esta sección estará disponible próximamente.');
+            });
+        });
+    </script>
+</body>
+</html>

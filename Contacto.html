@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE-ZONE</title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2728/2728262.png">
+</head>
+<style>
+ 
+   
+    body { 
+        background-image: url("https://img.freepik.com/vector-gratis/fondo-curva-azul_53876-113112.jpg?t=st=1732052579~exp=1732056179~hmac=12625446917037ae149b6693d8b66fa380acef764e22c393c25d9f1a8462ec6c&w=740");
+       background-size: cover; 
+        color: rgb(0, 0, 0); 
+    }
+
+
+    nav {
+        width: 100%;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        z-index: 10;
+    }
+
+    .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu li {
+        position: relative;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: white; 
+        padding: 15px 20px;
+        display: block;
+        font-weight: bold;
+    }
+
+    .menu a:hover {
+        background-color: #575757;
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        top: 100%;
+        left: 0;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li:hover .submenu {
+        display: block;
+    }
+
+    .submenu li a {
+        padding: 10px 20px;
+        width: 150px;
+    }
+
+    .submenu li a:hover {
+        background-color: #575757;
+    }
+
+    .content {
+        margin-top: 100px; 
+    }
+
+
+    #contacto, iframe {
+        color: rgb(0, 0, 0);
+    }
+</style>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Tutoriales</a>
+                <ul class="submenu">
+                    <li><a href="IntroduccionHTML.html">HTML</a></li>
+                    <li><a href="IntroduccionCSS.html">CSS</a></li>
+                    <li><a href="IntroduccionJS.html">JavaScript</a></li>
+                    <li><a href="IntroduccionPHP.html">PHP</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <h2 style="text-align: center; margin-top: 120px;">Contacto</h2> <!-- Ajustar el margen superior -->
+    <section id="contacto" class="content-section">
+        <div>
+            <p><span style="color: #000000;">Contáctanos por WhatsApp:</span></p>
+            <a href="https://wa.me/5525338668" target="_blank">WhatsApp</a>
+            <p><span style="color: #000000;">Encuéntranos en Facebook:</span></p>
+            <a href="https://www.facebook.com/eduardo.iglesias.31337194" target="_blank">Facebook</a>
+            <p><span style="color: #000000;">Encuéntranos en Instagram:</span></p>
+            <a href="https://www.instagram.com/iglesias_ed_a/" target="_blank">Instagram</a>
+            <p class="contact-text">Para aclaraciones, envía un correo electrónico a: <a href="mailto:zonadecodigo1@gmail.com">zonadecodigo1@gmail.com</a></p>
+            <p class="contact-text">Nuestra ubicación</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10634.28060916828!2d-98.87807241385396!3d19.55080047306376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e887c2e192d3%3A0x19dbb054ea4be344!2sUniversidad%20Privada%20del%20Estado%20de%20M%C3%A9xico%20Plantel%20Texcoco!5e0!3m2!1ses-419!2smx!4v1732053193532!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+</body>
+</html>
